@@ -30,7 +30,7 @@ result_m_s_root = math.sqrt(item_1)   #  15. Создать переменную
 print(result_m_s_root )    #  16. Вывести result_m_s_root в консоль.
 
 print("_"*57, '\n', "-"*24, "17-18", "-"*24)
-result_mp_s_root = math.pow(item_2, 2)    #  17. Создать переменную result_mp_s_root в которой вы найдёте квадратный корень любой из переменной item используя библиотеку math используя метод pow.
+result_mp_s_root = math.pow(item_2, 0.5)    #  17. Создать переменную result_mp_s_root в которой вы найдёте квадратный корень любой из переменной item используя библиотеку math используя метод pow.
 print(result_mp_s_root)    #  18. Вывести result_mp_s_root в консоль.
 
 print("_"*57, '\n', "-"*24, "19-22", "-"*24)
@@ -106,8 +106,7 @@ print("_"*57, '\n', "-"*24, "56-57", "-"*24)
 try:
     b_item_result_division = b_item_t / b_item_f    #  56. Создать переменную b_item_result_division и присвоить деление b_item_t и b_item_f
 except ZeroDivisionError as e:
-    print('на 0 (ноль) делить нельзя')
-    # print(b_item_result_division)    #  57. Вывести b_item_result_division в консоль. (Получить ошибку)
+    print(e)    #  57. Вывести b_item_result_division в консоль. (Получить ошибку)
 
 print("_"*57, '\n', "-"*24, "58-59", "-"*24)
 b_item_1_int = int(b_item_t)    #  58. Создать переменную b_item_1_int и присвоить явное приведение b_item_t к int
