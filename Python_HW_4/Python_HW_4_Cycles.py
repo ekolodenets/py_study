@@ -109,6 +109,7 @@ run = True
 #             print('-------- Inner_Step =', inner_item)
 #             if inner_item == 5:
 #                 inner_count = inner_item
+#         print('-- inner_count =', inner_count)
 
 # Сделать цикл for c переменной item который будет работать пока счётчик range досчитает от 0 до 20
 # Тело цикла:
@@ -119,9 +120,9 @@ run = True
 #
 # 13.3 Выйти з if. Вывести в консоль (‘End_iteration =’, item)
 
-# for item in range(20):
-#     print('Step =', item)
-#     if item > 7 and item < 12:
-#         print('If_item =', item)
-#         continue
-#     print('End_iteration =', item)
+for item in range(20):
+    print('Step =', item)
+    if item > 7 and item < 12:
+        print('If_item =', item)
+        continue
+print('End_iteration =', item)
