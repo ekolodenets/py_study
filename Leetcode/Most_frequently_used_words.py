@@ -21,13 +21,15 @@ import re
 
 def top_3_words(text):
     d = {}
-    text = re.sub('[/!@#$%^&*().";:?,_\-=\\\]', ' ', text)
+    # words = re.findall(r"'*[a-z]+'?[a-z]*'*",text.lower()) # this is the same as the below
+
+    text = re.sub('[/!@#$%^&*().";:?,_\-=\\\]', ' ', text).lower()
     for word in text.split():
         if word[0].isalpha() or word[1].isalpha():
-            if word.lower() in d:
-                d[word.lower()] += 1
+            if word in d:
+                d[word] += 1
             else:
-                d[word.lower()] = 1
+                d[word] = 1
     return [i[0] for i in sorted(d.items(), key=lambda x: x[1], reverse=True)[:3]]
 
 
