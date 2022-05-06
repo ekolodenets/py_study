@@ -55,11 +55,23 @@ def next_bigger(n):
         return x
 
 
+# def next_bigger(n):
+#     s = list(str(n))
+#     for i in range(len(s)-2,-1,-1):
+#         if s[i] < s[i+1]:
+#             t = s[i:]                               # t is the smallest list that should be increased
+#             m = min(filter(lambda x: x>t[0], t))    # m is the smallest number that is bigger than t[0]
+#             t.remove(m)                             # remove m from t
+#             t.sort()                                # sort t
+#             s[i:] = [m] + t                         # replace old slice with the next bigger one
+#             return int("".join(s))
+#     return -1
+
 
 # print(next_bigger(9876543210))
 # print(next_bigger(9876543210))
 # print(next_bigger(59884848459853))
-# print(next_bigger(414))
+print(next_bigger(848459853))
 # print(next_bigger(51716565413093))
 # assert next_bigger(59884848459853), 59884848483559
 # assert next_bigger(51716565413093), 51716565413309
