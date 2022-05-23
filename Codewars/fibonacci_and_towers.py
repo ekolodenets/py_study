@@ -1,10 +1,10 @@
 # fibonachi
-# n = 100
+n = 5
 #
-# F = [1] * (n + 1)
-# for i in range(2, n + 1):
-#     F[i] = F[i - 2] + F[i - 1]
-# print(F[n])
+F = [1] * (n + 1)
+for i in range(2, n + 1):
+    F[i] = F[i - 2] + F[i - 1]
+print(F[n])
 
 # fibonachi2
 # def fib(n):
