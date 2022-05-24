@@ -37,8 +37,8 @@ def caffeine(coffee, number):
 
 
 
-print(caffeine("mocha", 1))
+# print(caffeine("latte", 5))
 # assert (caffeine("latte", 0) == "You haven't even had coffee today!")
-assert (caffeine("decaf", 25) == "You haven't even had coffee today!")
+# assert (caffeine("decaf", 25) == "You haven't even had coffee today!")
 # assert (caffeine("espresso", 6) == "Only decaf for you now!")
 # assert (caffeine("mocha", 1) == "The doctor won't be worried yet!")
